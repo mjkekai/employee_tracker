@@ -38,6 +38,19 @@ INSERT INTO role (title, salary, department_id) VALUES ('CEO', 80000, 1);
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Bob', 'Slack', 1, 1);
 
+
+INSERT INTO department (name) VALUES ('Executive');
+
+INSERT INTO role (title, salary, department_id) VALUES ('CFO', 75000, 1);
+
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Kate', 'Smith', 5, 13);
+
+INSERT INTO department (name) VALUES ('IT');
+
+INSERT INTO role (title, salary, department_id) VALUES ('IT', 75000, 3);
+
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('Chloe', 'OBrien', 6, 12);
+
 To Join tables
 
 
