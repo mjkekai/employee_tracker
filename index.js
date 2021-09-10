@@ -96,14 +96,13 @@ const viewEmployee = async () => {
 };
 
 const addRole = () => {
-
-  //ask questions 
+  //ask questions
   this.connection.query("INSERT INTO role SET ?", role);
   role = {
     title: "",
     salary: 0,
-    department_id: 0
-    }
+    department_id: 0,
+  };
 
   connection.query(
     `
@@ -130,9 +129,9 @@ const addRole = () => {
   );
 };
 
-this.connection.query(
-  "UPDATE employee SET role_id = ? WHERE id = ?",
-  [roleId, employeeId]
-)
+// this.connection.query(
+//   "UPDATE employee SET role_id = ? WHERE id = ?",
+//   [roleId, employeeId]
+// )
 
 startApp();
